@@ -5,10 +5,11 @@ import android.app.AlarmManager;
 import android.content.Context;
 import android.icu.util.Calendar;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -16,10 +17,13 @@ public class MainActivity extends Activity {
     int realMinute;
     int setTime=0;
     int[] d0 = new int[24];
+    private Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        context=this;
+
         //控件初始化
         CheckBox c0 = (CheckBox)findViewById(R.id.c0);
         CheckBox c1 = (CheckBox)findViewById(R.id.c1);
@@ -64,6 +68,225 @@ public class MainActivity extends Activity {
                     d0[1]=1;
                 }
                 else d0[1]=0;
+            }
+        });
+        c2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[2]=1;
+                }
+                else d0[2]=0;
+            }
+        });
+        c3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[3]=1;
+                }
+                else d0[3]=0;
+            }
+        });
+        c4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[4]=1;
+                }
+                else d0[4]=0;
+            }
+        });
+        c5.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[5]=1;
+                }
+                else d0[5]=0;
+            }
+        });
+        c6.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[6]=1;
+                }
+                else d0[6]=0;
+            }
+        });
+        c7.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[7]=1;
+                }
+                else d0[7]=0;
+            }
+        });
+        c8.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[8]=1;
+                }
+                else d0[8]=0;
+            }
+        });
+        c9.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[9]=1;
+                }
+                else d0[9]=0;
+            }
+        });
+        c10.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[10]=1;
+                }
+                else d0[10]=0;
+            }
+        });
+        c11.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[11]=1;
+                }
+                else d0[11]=0;
+            }
+        });
+        c12.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[12]=1;
+                }
+                else d0[12]=0;
+            }
+        });
+        c13.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[13]=1;
+                }
+                else d0[13]=0;
+            }
+        });
+        c14.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[14]=1;
+                }
+                else d0[14]=0;
+            }
+        });
+        c15.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[15]=1;
+                }
+                else d0[15]=0;
+            }
+        });
+        c16.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[16]=1;
+                }
+                else d0[16]=0;
+            }
+        });
+        c17.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[17]=1;
+                }
+                else d0[17]=0;
+            }
+        });
+        c18.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[18]=1;
+                }
+                else d0[18]=0;
+            }
+        });
+        c19.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[19]=1;
+                }
+                else d0[19]=0;
+            }
+        });
+        c20.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[20]=1;
+                }
+                else d0[20]=0;
+            }
+        });
+        c21.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[21]=1;
+                }
+                else d0[21]=0;
+            }
+        });
+        c22.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[22]=1;
+                }
+                else d0[22]=0;
+            }
+        });
+        c23.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    d0[23]=1;
+                }
+                else d0[23]=0;
+            }
+        });
+        choose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast t = Toast.makeText(context,"请稍等",Toast.LENGTH_LONG);
+                t.show();
+                for(int i = 0;i<24;i++){
+                    if(d0[i]==1){
+                        setAlarm(i);
+                    }
+                }
+
+                Toast t2 = Toast.makeText(context,"设置完成",Toast.LENGTH_LONG);
+                t2.show();
+            }
+        });
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
 
