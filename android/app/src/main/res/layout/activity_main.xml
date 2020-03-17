@@ -30,7 +30,8 @@
                 android:layout_height="50dp"
                 android:layout_column="1"
                 android:shadowColor="@color/white"
-                android:id="@+id/c0"/>
+                android:id="@+id/c0"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -44,7 +45,8 @@
                 android:layout_height="50dp"
                 android:layout_column="3"
                 android:shadowColor="@color/white"
-                android:id="@+id/c1"/>
+                android:id="@+id/c1"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -57,7 +59,8 @@
             <CheckBox
                 android:layout_height="50dp"
                 android:layout_column="5"
-                android:id="@+id/c2"/>
+                android:id="@+id/c2"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -70,7 +73,8 @@
             <CheckBox
                 android:layout_height="50dp"
                 android:layout_column="7"
-                android:id="@+id/c3"/>
+                android:id="@+id/c3"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -89,7 +93,8 @@
                 android:layout_height="50dp"
                 android:layout_column="1"
                 android:shadowColor="@color/white"
-                android:id="@+id/c4"/>
+                android:id="@+id/c4"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -103,7 +108,8 @@
                 android:layout_height="50dp"
                 android:layout_column="3"
                 android:shadowColor="@color/white"
-                android:id="@+id/c5"/>
+                android:id="@+id/c5"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -116,7 +122,8 @@
             <CheckBox
                 android:layout_height="50dp"
                 android:layout_column="5"
-                android:id="@+id/c6"/>
+                android:id="@+id/c6"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -129,7 +136,8 @@
             <CheckBox
                 android:layout_height="50dp"
                 android:layout_column="7"
-                android:id="@+id/c7"/>
+                android:id="@+id/c7"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -148,7 +156,8 @@
                 android:layout_height="50dp"
                 android:layout_column="1"
                 android:shadowColor="@color/white"
-                android:id="@+id/c8"/>
+                android:id="@+id/c8"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -162,7 +171,8 @@
                 android:layout_height="50dp"
                 android:layout_column="3"
                 android:shadowColor="@color/white"
-                android:id="@+id/c9"/>
+                android:id="@+id/c9"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -175,7 +185,8 @@
             <CheckBox
                 android:layout_height="50dp"
                 android:layout_column="5"
-                android:id="@+id/c10"/>
+                android:id="@+id/c10"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -188,7 +199,8 @@
             <CheckBox
                 android:layout_height="50dp"
                 android:layout_column="7"
-                android:id="@+id/c11"/>
+                android:id="@+id/c11"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -207,7 +219,8 @@
                 android:layout_height="50dp"
                 android:layout_column="1"
                 android:shadowColor="@color/white"
-                android:id="@+id/c12"/>
+                android:id="@+id/c12"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -221,7 +234,8 @@
                 android:layout_height="50dp"
                 android:layout_column="3"
                 android:shadowColor="@color/white"
-                android:id="@+id/c13"/>
+                android:id="@+id/c13"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -234,7 +248,8 @@
             <CheckBox
                 android:layout_height="50dp"
                 android:layout_column="5"
-                android:id="@+id/c14"/>
+                android:id="@+id/c14"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -247,7 +262,8 @@
             <CheckBox
                 android:layout_height="50dp"
                 android:layout_column="7"
-                android:id="@+id/c15"/>
+                android:id="@+id/c15"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -266,7 +282,8 @@
                 android:layout_height="50dp"
                 android:layout_column="1"
                 android:shadowColor="@color/white"
-                android:id="@+id/c16"/>
+                android:id="@+id/c16"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -280,7 +297,8 @@
                 android:layout_height="50dp"
                 android:layout_column="3"
                 android:shadowColor="@color/white"
-                android:id="@+id/c17"/>
+                android:id="@+id/c17"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -293,7 +311,8 @@
             <CheckBox
                 android:layout_height="50dp"
                 android:layout_column="5"
-                android:id="@+id/c18"/>
+                android:id="@+id/c18"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -306,7 +325,8 @@
             <CheckBox
                 android:layout_height="50dp"
                 android:layout_column="7"
-                android:id="@+id/c19"/>
+                android:id="@+id/c19"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -325,7 +345,8 @@
                 android:layout_height="50dp"
                 android:layout_column="1"
                 android:shadowColor="@color/white"
-                android:id="@+id/c20"/>
+                android:id="@+id/c20"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -339,7 +360,8 @@
                 android:layout_height="50dp"
                 android:layout_column="3"
                 android:shadowColor="@color/white"
-                android:id="@+id/c21"/>
+                android:id="@+id/c21"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -352,7 +374,8 @@
             <CheckBox
                 android:layout_height="50dp"
                 android:layout_column="5"
-                android:id="@+id/c22"/>
+                android:id="@+id/c22"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
@@ -365,7 +388,8 @@
             <CheckBox
                 android:layout_height="50dp"
                 android:layout_column="7"
-                android:id="@+id/c23"/>
+                android:id="@+id/c23"
+                style="@style/MyCheckboxStyle"/>
 
             <TextView
                 android:layout_width="50dp"
