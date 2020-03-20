@@ -2,19 +2,25 @@ package foxe6.foxalarm;
 
 import android.app.Activity;
 import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
 import android.icu.util.Calendar;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.Toast;
 
+import static android.content.ContentValues.TAG;
+
 public class MainActivity extends Activity {
 
     int realHour;
     int realMinute;
+    int realSecond;
     int setTime=0;
     int[] d0 = new int[24];
     private Context context;
@@ -276,6 +282,7 @@ public class MainActivity extends Activity {
                 for(int i = 0;i<24;i++){
                     if(d0[i]==1){
                         setAlarm(i);
+                        Log.d(TAG,"set"+i);
                     }
                 }
 
@@ -292,14 +299,26 @@ public class MainActivity extends Activity {
 
     }
 
+    @Override
+    protected void onDestroy() {
+        Log.d(TAG,"onDestory");
+        super.onDestroy();
+    }
+
     void setAlarm(int setHour){
+        Intent intent = new Intent(MainActivity.this, AlarmActivity.class);
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
         realHour = calendar.get(Calendar.HOUR_OF_DAY);
         realMinute = calendar.get(Calendar.MINUTE);
-        setTime=((setHour-realHour)*60-realMinute)*60;
+        realSecond= calendar.get(Calendar.SECOND);
+        setTime=(((setHour-realHour)*60-realMinute)*60)-realSecond;
         calendar.add(Calendar.SECOND,setTime);
+        intent.putExtra("setHour",setHour);
+        PendingIntent pi = PendingIntent.getActivity(MainActivity.this, 0, intent, 0);
         AlarmManager mn = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
-        mn.setExact(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),null);
+        mn.setExact(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),pi);
+        Log.d(TAG,"set"+calendar.getTimeInMillis());
+        Log.d(TAG,"settime"+setTime);
     }
 }
